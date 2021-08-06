@@ -1,20 +1,89 @@
-
-:root{
+:root {
     --bg-color: #302B63;
     --blue-complement: #6475AB;
     --dark-color: #3E3E3E;
     --light-color: #ffffff;
     --incentive-color: #E85454;
-    --secondary-text: #878787; 
+    --secondary-text: #878787;
 }
 
-body, *{
+body,
+* {
     font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--light-color);
 }
+
+button {
+    border: none;
+    background-color: var(--incentive-color);
+    width: 11rem;
+    height: 3rem;
+    margin-top: 1.5rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+option {
+    background-color: var(--light-color);
+    color: black;
+}
+
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+}
+
+.inputs-container select {
+    background-color: white;
+    color: black;
+    border: none;
+    width: 11rem;
+    height: 2rem;
+}
+
+.parameter {
+    border: 0;
+    outline: none;
+    border-bottom-color: white;
+    border-bottom: 1px solid #ffffff;
+}
+
+.inputs-yeah {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-process-container {
+    display: flex;
+    justify-content: space-between;
+    width: 32rem;
+}
+
+.add-process input {
+    margin-top: 1rem;
+}
+
+.ckeck-option {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 28px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 28px;
+}
+
 
 /*-----------Process segment----------*/
 
-.process-container-param{
+.process-container-param {
     box-sizing: border-box;
     padding: 1em;
     width: 250px;
@@ -25,7 +94,7 @@ body, *{
     align-items: center;
 }
 
-.process{
+.process {
     margin-top: 10px;
     position: relative;
     width: 220px;
@@ -37,50 +106,44 @@ body, *{
     align-items: center;
 }
 
-.white-space{
-    width:185px;
+.white-space {
+    width: 185px;
     height: 15px;
     background-color: var(--light-color);
     text-align: center;
     border-radius: 10px;
 }
 
-.instructions-left{
+.instructions-left {
     background-color: var(--dark-color);
     color: var(--light-color);
     font-size: 0.7em;
-
     display: flex;
     justify-content: center;
     align-items: center;
     width: 15px;
     height: 15px;
-    
     position: absolute;
     padding: 8px;
     border-radius: 100%;
-    left:43%;
-    top:5px;
-    
+    left: 43%;
+    top: 5px;
 }
-.instruction-remove{
-    cursor: pointer;
 
+.instruction-remove {
+    cursor: pointer;
     background-color: var(--incentive-color);
     color: var(--light-color);
     font-size: 1em;
     font-weight: bold;
-
     display: flex;
     justify-content: center;
     align-items: center;
     width: 25px;
     height: 25px;
-    
     position: absolute;
     padding: 8px;
     border-radius: 100%;
-    left:110%;
-    top:3px;
+    left: 110%;
+    top: 3px;
 }
-
