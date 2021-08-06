@@ -84,4 +84,25 @@ body, *{
     top:3px;
 }
 
-/*Start another component*/
+/*cpu simulation*/
+.cpu-segment{
+    width: fit-content;
+    position: relative;
+    background-color: var(--bg-color);
+}
+
+.state-cpu{
+    background-color: var(--bg-color);
+    width:  80px;
+    height:  80px;
+    border-radius: 100%;
+
+    z-index: 1;
+    position: absolute;
+    top:30%;
+    left: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
